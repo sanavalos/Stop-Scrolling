@@ -25,24 +25,13 @@
   function showScrollModal() {
     var modal = document.createElement('div');
     modal.id = 'scrollModal';
-    modal.style.position = 'fixed';
-    modal.style.top = '25px';
-    modal.style.right = '30px';
-    modal.style.transform = 'translate(-50%, -50%)';
-    modal.style.width = '300px';
-    modal.style.padding = '20px';
-    modal.style.background = '#ffffff';
-    modal.style.border = '1px solid #000000';
-    modal.style.boxShadow = '0 5px 10px rgba(0,0,0,0.1)';
-    modal.style.textAlign = 'center';
-    modal.style.fontFamily = 'Arial, sans-serif';
-    modal.style.borderRadius = '12px';
 
     var message = document.createElement('p');
     message.textContent = 'You have been scrolling for more than 15 seconds!';
     modal.appendChild(message);
 
     var okButton = document.createElement('button');
+    okButton.id = 'scrollModalOkButton';
     okButton.textContent = 'OK';
     okButton.addEventListener('click', function () {
       clearTimeout(modalTimeout);
