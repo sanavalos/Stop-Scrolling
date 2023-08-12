@@ -2,7 +2,7 @@
 
 <br />
 <div align="center">
-  <img src="images/discord_bot.png" alt="Discord Bot" width="150" height="150">
+  <img src="assets/mouse_scroll.png" alt="Scrolling Mouse" width="150" height="150">
 
   <h3 align="center">StopScrolling</h3>
 
